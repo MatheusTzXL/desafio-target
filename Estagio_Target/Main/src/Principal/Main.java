@@ -1,10 +1,10 @@
 package Principal;
 
-import Logica.Fibonacci;  // Importando a classe Fibonacci
-import Logica.LetraA;      // Importando a classe LetraA
-import Logica.Soma;        // Importando a classe Soma
-import Logica.Sequencias;  // Importando a classe Sequencias
-import Logica.Interruptores; // Importando a classe Interruptores
+import Logica.Fibonacci;
+import Logica.LetraA;
+import Logica.Soma;
+import Logica.Sequencias;
+import Logica.Interruptores;
 
 import java.util.Scanner;
 
@@ -12,7 +12,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Criando instâncias das classes do pacote Logica
         Fibonacci fibonacci = new Fibonacci();
         LetraA letraA = new LetraA();
         Soma soma = new Soma();
@@ -23,7 +22,6 @@ public class Main {
         System.out.print("Digite um número para verificar se pertence à sequência de Fibonacci: ");
         int numero = scanner.nextInt();
 
-        // Exibe se pertence ou se não pertence a sequência
         if (fibonacci.pertenceFibonacci(numero)) {
             System.out.println("O número " + numero + " pertence à sequência de Fibonacci.");
         } else {
@@ -33,7 +31,7 @@ public class Main {
 
         // 2) Verificação da letra 'a'
         System.out.print("Digite uma string para verificar quantas letras 'a' possuem: ");
-        scanner.nextLine();  // Consumir a quebra de linha pendente
+        scanner.nextLine();
         String str = scanner.nextLine();
         int contador = letraA.contarLetraA(str);
         System.out.println("A letra 'a' aparece " + contador + " vez(es) na string.");
