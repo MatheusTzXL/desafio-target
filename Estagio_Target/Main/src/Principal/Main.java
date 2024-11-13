@@ -1,4 +1,4 @@
-package Principal;  // Não é necessário se 'Main' estiver no mesmo pacote 'TGT', senão é necessário.
+package Principal;
 
 import Logica.Fibonacci;  // Importando a classe Fibonacci
 import Logica.LetraA;      // Importando a classe LetraA
@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Criando instâncias das classes do pacote TGT
+        // Criando instâncias das classes do pacote Logica
         Fibonacci fibonacci = new Fibonacci();
         LetraA letraA = new LetraA();
         Soma soma = new Soma();
